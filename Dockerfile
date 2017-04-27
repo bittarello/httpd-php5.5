@@ -16,7 +16,7 @@ RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch
     
 ADD remi.repo /etc/yum.repos.d/remi.repo
 
-RUN yum -y install php php-mysql php-mysqlnd php-gd php-ldap php-mbstring psmisc tar && \
+RUN yum -y install php php-mysql php-mysqlnd php-gd php-ldap php-xml php-mbstring psmisc tar && \
     yum clean all
 
 ADD php.ini /etc/php.ini
